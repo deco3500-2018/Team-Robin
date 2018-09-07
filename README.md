@@ -4,5 +4,7 @@
 # Tasks
 - [x] Submit team contract @cutierobot
 - [x] Complete Proposal document
-- [ ] Finalise proposal document
-- [ ] Add finalised proposal to GitHub Wiki
+- [x] Finalise proposal document
+- [x] Add finalised proposal to GitHub Wiki
+- [ ] Start work on requirements
+- [ ] Commence work on prototype development
