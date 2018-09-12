@@ -7,6 +7,7 @@
 - [x] Finalise proposal document
 - [x] Add finalised proposal to GitHub Wiki
 - [ ] Start work on requirements
+- [ ] Anatomize the design and development work in different bits
 - [ ] Commence work on prototype development
 
 ## Week 8 Tasks
