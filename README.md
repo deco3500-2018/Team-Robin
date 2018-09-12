@@ -18,3 +18,4 @@
 - [ ] Paper Prototype @cutierobot
 - [ ] Arrange a time to speech to Dr Maria Boden
 - [ ] Finalise paper prototype designs @cutierobot
+- [ ] Unity3D VR research
