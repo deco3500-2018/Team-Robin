@@ -8,3 +8,12 @@
 - [x] Add finalised proposal to GitHub Wiki
 - [ ] Start work on requirements
 - [ ] Commence work on prototype development
+
+## Week 8 Tasks
+- [ ] Make initial contact with users (Scrum Master @cutierobot)
+- [ ] Make contact with Dr Maria Boden from UQ (Scrum Master @cutierobot)
+- [ ] Make contact with UQ school of education (Scrum Master @cutierobot)
+- [ ] Create interview questions to enhance our understanding for the target user group
+- [ ] Paper Prototype @cutierobot
+- [ ] Arrange a time to speech to Dr Maria Boden
+- [ ] Finalise paper prototype designs @cutierobot
