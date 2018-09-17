@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/MyData/Scenes/FlyingBrick.unity
+  isLoaded: 1
+  isActive: 1
