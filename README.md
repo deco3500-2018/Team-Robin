@@ -1,6 +1,10 @@
 # Team-Robin
 # Proposal
 [Link to Proposal Wiki](https://github.com/deco3500-2018/Team-Robin/wiki/Proposal)
+
+## How to deploy and use our prototype
+Please go to the following wiki age titled [Instillation](https://github.com/deco3500-2018/Team-Robin/wiki/Installation)
+running the prototype is aimed at just installing a apk on your phone and putting it in a google headset.
 # Tasks
 - [x] Submit team contract @cutierobot
 - [x] Complete Proposal document
