@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
 	private Vector3 playerStartingPosition;
 	private float x;
 	private float y;
+	private bool userAtConsole;
+	public TextMesh text;
 
 	//is the user looking at the console text
 	private bool isLookedAt = false;
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour {
 	// public event Action
 	// Use this for initialization
 	void Start () {
+		userAtConsole = false;
 		player = GameObject.Find("Player");
 		playerStartingPosition = player.transform.position;
 		x = playerStartingPosition.x;
@@ -37,7 +40,12 @@ public class Player : MonoBehaviour {
 	 * Teleports the player to the console
 	 */
 	public void toConsoleTeleport( ) {
+		if (userAtConsole) {
 		player.transform.position = new Vector3(x, y, -8f);
+			
+		} else {
+			player.transform.position = new Vector3(x, y, -11.7f);
+		}
 	}
 
 	//checks if user is loking at the console text gaze object
@@ -52,11 +60,23 @@ public class Player : MonoBehaviour {
 				lookedAtTimer = 0f;
 
 				Debug.Log("teleported to console");
+				atConsole();
 				toConsoleTeleport();
 			}
 		} else {
 			lookedAtTimer = 0f;
 			//reset graphical indicator to 0
+		}
+	}
+
+	/*Sets if the user is at the console or not*/
+	private void atConsole() {
+		if (userAtConsole) {
+			userAtConsole = false;
+			text.text = "View Control Panel";
+		} else {
+			userAtConsole = true;
+			text.text = "Move Back";
 		}
 	}
 
