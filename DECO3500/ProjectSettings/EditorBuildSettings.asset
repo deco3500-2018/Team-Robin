@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GoogleVR/Demos/Scenes/HelloVR.unity
     guid: bb36d2905dc634f1c9eecb35beecaca8
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyData/Scenes/11minSceneCutierobot.unity
     guid: 01595c1078d4f3f489d5ce03d49c7509
+  - enabled: 1
+    path: Assets/MyData/Scenes/FlyingBrick.unity
+    guid: 1b9883c2f45ada54bba76aa07a122b88
   m_configObjects: {}
