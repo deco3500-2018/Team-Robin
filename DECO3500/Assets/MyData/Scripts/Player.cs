@@ -29,7 +29,7 @@ public class Player : MonoBehaviour {
 		playerStartingPosition = player.transform.position;
 		x = playerStartingPosition.x;
 		y = playerStartingPosition.y;
-		gazeTimer = GameObject.Find("ReticleLoader").GetComponent<ReticleTimer>();
+		gazeTimer = GameObject.Find("ConsoleTextGaze").GetComponent<ReticleTimer>();
 	}
 	
 	// Update is called once per frame
@@ -56,7 +56,6 @@ public class Player : MonoBehaviour {
 		if (isLookedAt) {
 			//increment timeDuration
 			lookedAtTimer += Time.deltaTime;
-			// Debug.Log("timer: " + lookedAtTimer);
 			//modify graphical indicator
 			gazeTimer.reticleTimer(lookedAtTimer);
 			if (lookedAtTimer > timeDuration) {
@@ -69,6 +68,7 @@ public class Player : MonoBehaviour {
 		} else {
 			lookedAtTimer = 0f;
 			//reset graphical indicator to 0
+			// gazeTimer.reset();
 		}
 	}
 
