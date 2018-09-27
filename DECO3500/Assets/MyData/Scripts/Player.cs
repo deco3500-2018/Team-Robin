@@ -13,11 +13,11 @@ public class Player : MonoBehaviour {
 	//is the user looking at the console text
 	private bool isLookedAt = false;
 	//how long the user has to look at the console text in order to teleport
-	public float timeDuration = 5f;
+	public float timeDuration;
 	//how long the user has been loking at the console text
 	private float lookedAtTimer = 0f;
 	//graphical progress indicator
-	private GameObject gazeTimer;
+	private ReticleTimer gazeTimer;
 	private GameObject player;
 
 
@@ -29,6 +29,7 @@ public class Player : MonoBehaviour {
 		playerStartingPosition = player.transform.position;
 		x = playerStartingPosition.x;
 		y = playerStartingPosition.y;
+		gazeTimer = GameObject.Find("ReticleLoader").GetComponent<ReticleTimer>();
 	}
 	
 	// Update is called once per frame
@@ -37,7 +38,7 @@ public class Player : MonoBehaviour {
 	}
 
 	/*
-	 * Teleports the player to the console
+	 * Teleports the player to the console. Changes the users position.
 	 */
 	public void toConsoleTeleport( ) {
 		if (userAtConsole) {
@@ -48,14 +49,16 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	//checks if user is loking at the console text gaze object
+	/*Checks if user is looking at the console text gaze object and calls 
+	ReticleTimer function to change the reticle timer image based on time left.
+	*/
 	private void consoleTextGaze() {
 		if (isLookedAt) {
 			//increment timeDuration
 			lookedAtTimer += Time.deltaTime;
-
+			// Debug.Log("timer: " + lookedAtTimer);
 			//modify graphical indicator
-
+			gazeTimer.reticleTimer(lookedAtTimer);
 			if (lookedAtTimer > timeDuration) {
 				lookedAtTimer = 0f;
 
@@ -69,7 +72,8 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	/*Sets if the user is at the console or not*/
+	/*Sets if the user is at the console or not. Changes the gaze text to the
+	appropriate string deponding if user is or is not at the console.*/
 	private void atConsole() {
 		if (userAtConsole) {
 			userAtConsole = false;
@@ -81,7 +85,8 @@ public class Player : MonoBehaviour {
 	}
 
 	/*
-	 * Sets if the text is being looked at by user
+	 * Sets if the text is being looked at by user. Called in EventTrigger on
+	 * PointerEnter and PointerExit event
 	 */
 	public void SetGazedAt(bool gazedAt) {
 		isLookedAt = gazedAt;

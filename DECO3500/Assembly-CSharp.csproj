@@ -164,6 +164,7 @@
      <Compile Include="Assets\MyData\Scripts\FlyingBrick.cs" />
      <Compile Include="Assets\MyData\Scripts\Player.cs" />
      <Compile Include="Assets\MyData\Scripts\PlayerWalk.cs" />
+     <Compile Include="Assets\MyData\Scripts\ReticleTimer.cs" />
      <Compile Include="Assets\MyData\Scripts\RotateCube.cs" />
      <Compile Include="Assets\MyData\Scripts\TextGaze.cs" />
      <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
