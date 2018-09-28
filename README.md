@@ -24,6 +24,6 @@ running the prototype is aimed at just installing a apk on your phone and puttin
 - [x] Finalise paper prototype designs @cutierobot
 - [x] Unity3D VR research
 ## Week 9 Tasks
-- [ ] Meeting with Dr Boden On Wednesday at 4 pm
+- [x] Meeting with Dr Boden On Wednesday at 4 pm
 - [ ] More development on the Unity vr project 
-- [ ] Create interview questions to enhance our understanding for the target user group
+- [x] Create interview questions to enhance our understanding for the target user group
