@@ -12,23 +12,19 @@ public class UIHandler : MonoBehaviour {
         DisplayText = this.transform.Find("HLayout/Image/Text").GetComponent<Text>();
         DisplayText.text = "";
         btns = this.GetComponentsInChildren<Button>();
-        foreach(Button b in btns)
-        {
+        foreach(Button b in btns) {
             b.onClick.AddListener(OnButtonClick);
         }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    void OnButtonClick()
-    {
+    void OnButtonClick() {
         string name = EventSystem.current.currentSelectedGameObject.name;
-        if (name == "Enter")
+        if (name == "Enter") {
+        	//want to pass this to my flyingBrick funciton thing @cutierobot
+            Debug.Log("text: " + DisplayText.text);
             DisplayText.text = "";
-        else
+        } else {
             DisplayText.text += name;
+        }
     }
 }
