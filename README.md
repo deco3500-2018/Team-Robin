@@ -5,6 +5,31 @@
 ## How to deploy and use our prototype
 Please go to the following wiki age titled [Instillation](https://github.com/deco3500-2018/Team-Robin/wiki/Installation)
 running the prototype is aimed at just installing a apk on your phone and putting it in a google headset.
+
+# Requirements
+# Designs
+# Interactive prototype/s (interim and final)
+## Interactive Prototypes
+ADD BUILD HISTORY HERE
+## Final Prototype(build)
+# Stand Ups
+## [Week 9](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-9)
+## [Week 11](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-11)
+# Prototype
+The final proof-of-concept prototype can be found [here]()ADD FINAL PRROF OF CONCEPT LINK HERE WHEN DONE
+<p>
+and the instilation instructions can be found [here](https://github.com/deco3500-2018/Team-Robin/wiki/Installation).
+  
+# GitHub Repository and Documentation
+All our documentation can be found on the [GitHub wiki](https://github.com/deco3500-2018/Team-Robin/wiki) and navigated through with the side panel on the right which has been layed out hopefully in a meaningful manor.
+## [readme.md](https://github.com/deco3500-2018/Team-Robin/blob/master/README.md)
+
+# Showcase: Conference Poster and supporting promotional material
+## COnference Poster
+![ADD CONFERENCE POSTER AND LINK HERE WHEN IT IS DONE]()
+
+## Supporting Material
+
 # Tasks
 - [x] Submit team contract @cutierobot
 - [x] Complete Proposal document
