@@ -79,7 +79,7 @@ public class Player : MonoBehaviour {
 	private void atConsole() {
 		if (userAtConsole) {
 			userAtConsole = false;
-			text.text = "View Control Panel";
+			text.text = "Go To Control Panel";
 			timer.transform.localScale = new Vector3(0.01f, 0.01f ,0.83671f);
 			timer.transform.position = new Vector3(-0.583f,0.706f,-6.868f);
 		} else {
