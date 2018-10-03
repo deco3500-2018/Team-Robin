@@ -16,8 +16,8 @@ ADD BUILD HISTORY HERE
 ## [Week 9](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-9)
 ## [Week 11](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-11)
 # Prototype
-The final proof-of-concept prototype can be found [here]()ADD FINAL PRROF OF CONCEPT LINK HERE WHEN DONE
-<p>
+The final proof-of-concept prototype can be found here ADD FINAL PROOF OF CONCEPT LINK HERE WHEN DONE
+
 and the instilation instructions can be found [here](https://github.com/deco3500-2018/Team-Robin/wiki/Installation).
   
 # GitHub Repository and Documentation
@@ -25,7 +25,7 @@ All our documentation can be found on the [GitHub wiki](https://github.com/deco3
 ## [readme.md](https://github.com/deco3500-2018/Team-Robin/blob/master/README.md)
 
 # Showcase: Conference Poster and supporting promotional material
-## COnference Poster
+## Conference Poster
 ![ADD CONFERENCE POSTER AND LINK HERE WHEN IT IS DONE]()
 
 ## Supporting Material
