@@ -11,6 +11,13 @@ running the prototype is aimed at just installing a apk on your phone and puttin
 # Interactive prototype/s (interim and final)
 ## Interactive Prototypes
 ADD BUILD HISTORY HERE
+To view all buid history go [here](https://github.com/deco3500-2018/Team-Robin/tree/master/Builds) to the build folder. to view an individual build click on the links below. Each build is a apk which is designed to go on a android phone. If you would like to test a build on your phone go [here](https://github.com/deco3500-2018/Team-Robin/wiki/Installation) ADD ACTUAL HEADING LINK WHEN DONE #11
+  
+  
+[build 23/09/18](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/23-09-18%20-%20build.apk)
+ 
+ 
+[build 02/10/18](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/02-10-18-build.apk)
 ## Final Prototype(build)
 # Stand Ups
 ## [Week 9](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-9)
