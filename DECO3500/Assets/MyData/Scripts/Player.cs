@@ -18,7 +18,6 @@ public class Player : MonoBehaviour {
 	private float lookedAtTimer = 0f;
 	//graphical progress indicator
 	private ReticleTimer gazeTimer;
-	private GameObject timer;
 	private GameObject player;
 
 
@@ -31,7 +30,6 @@ public class Player : MonoBehaviour {
 		x = playerStartingPosition.x;
 		y = playerStartingPosition.y;
 		gazeTimer = GameObject.Find("ConsoleTextGaze").GetComponent<ReticleTimer>();
-		timer = GameObject.Find("ReticleTimer");
 	}
 	
 	// Update is called once per frame
@@ -79,15 +77,10 @@ public class Player : MonoBehaviour {
 	private void atConsole() {
 		if (userAtConsole) {
 			userAtConsole = false;
-			text.text = "Go To Control Panel";
-			timer.transform.localScale = new Vector3(0.01f, 0.01f ,0.83671f);
-			timer.transform.position = new Vector3(-0.583f,0.706f,-6.868f);
+			text.text = "View Control Panel";
 		} else {
 			userAtConsole = true;
 			text.text = "Move Back";
-			//  col.gameObject.transform.localScale += new Vector3(1, 0, 1);
-			timer.transform.localScale = new Vector3(0.001f, 0.001f ,0.83671f);
-			timer.transform.position = new Vector3(-0.583f,0.9f,-6.868f);
 		}
 	}
 
