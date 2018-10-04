@@ -19,6 +19,8 @@ public class Player : MonoBehaviour {
 	//graphical progress indicator
 	private ReticleTimer gazeTimer;
 	private GameObject player;
+	private GameObject timer;
+	private Transform timerTrans;
 
 
 	// public event Action
@@ -26,6 +28,8 @@ public class Player : MonoBehaviour {
 	void Start () {
 		userAtConsole = false;
 		player = GameObject.Find("Player");
+		timer = GameObject.Find("ReticleTimer");
+		timerTrans = timer.GetComponent<Transform>();
 		playerStartingPosition = player.transform.position;
 		x = playerStartingPosition.x;
 		y = playerStartingPosition.y;
@@ -42,10 +46,14 @@ public class Player : MonoBehaviour {
 	 */
 	public void toConsoleTeleport( ) {
 		if (userAtConsole) {
-		player.transform.position = new Vector3(x, y, -8f);
+			player.transform.position = new Vector3(x, y, -8f);
+			timerTrans.localScale = new Vector3(0.001f, 0.001f, 0.83671f);
+			timer.transform.position = new Vector3(-0.5f, 0.9f, -6.868f);
 			
 		} else {
 			player.transform.position = new Vector3(x, y, -11.7f);
+			timerTrans.localScale = new Vector3(0.003f, 0.003f, 0.83671f);
+			timer.transform.position = new Vector3(-0.467f, 0.506f, -6.868f);
 		}
 	}
 
@@ -61,7 +69,7 @@ public class Player : MonoBehaviour {
 			if (lookedAtTimer > timeDuration) {
 				lookedAtTimer = 0f;
 
-				Debug.Log("teleported to console");
+				// Debug.Log("teleported to console");
 				atConsole();
 				toConsoleTeleport();
 			}
