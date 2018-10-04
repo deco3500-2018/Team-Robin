@@ -77,7 +77,7 @@ public class Player : MonoBehaviour {
 	private void atConsole() {
 		if (userAtConsole) {
 			userAtConsole = false;
-			text.text = "View Control Panel";
+			text.text = "Go To Control Panel";
 		} else {
 			userAtConsole = true;
 			text.text = "Move Back";
