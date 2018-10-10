@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class UIHandler : MonoBehaviour {
     private Button[] btns;
-    private Text DisplayText;
+    public Text DisplayText;
     private string lastText;
     public string number;
     public bool enterPressed; // true, if the enter button is pressed.
