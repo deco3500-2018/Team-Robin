@@ -1306,6 +1306,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 581316262}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &620230533 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1887330000092234, guid: 296ab75400a347b46b97cfa7e00e54d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 896132165}
+--- !u!114 &620230534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620230533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c9b992d303d1146b61a62ff6370e16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redLaunchButton: {fileID: 2100000, guid: 8b51a662280cdfd4fb1023304ec3575d, type: 2}
+  blackLaunchButton: {fileID: 2100000, guid: 598f7c83d32b5744d8b2e04ddf820094, type: 2}
 --- !u!4 &627504152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4761379794316526, guid: b663b19f9743b0c41ab269966b6ec18e,
@@ -1938,6 +1956,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224502921472723670, guid: 296ab75400a347b46b97cfa7e00e54d7,
         type: 2}
@@ -2602,6 +2625,36 @@ Prefab:
     - target: {fileID: 114096218693778936, guid: 296ab75400a347b46b97cfa7e00e54d7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 620230534}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLaunchButtonColour
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3415,6 +3468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: 
+  enterPressed: 0
 --- !u!114 &1236755834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5162,6 +5216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   number: 
+  enterPressed: 0
 --- !u!114 &1909519094
 MonoBehaviour:
   m_ObjectHideFlags: 0
