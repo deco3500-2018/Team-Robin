@@ -645,7 +645,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 8b51a662280cdfd4fb1023304ec3575d, type: 2}
+  - {fileID: 2100000, guid: 598f7c83d32b5744d8b2e04ddf820094, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1311,7 +1311,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1887330000092234, guid: 296ab75400a347b46b97cfa7e00e54d7,
     type: 2}
   m_PrefabInternal: {fileID: 896132165}
---- !u!114 &620230534
+--- !u!114 &620230538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1843,8 +1843,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 795717474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.583, y: 0.706, z: -6.868}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.83671}
+  m_LocalPosition: {x: -0.45, y: 0.5, z: -6.868}
+  m_LocalScale: {x: 0.003, y: 0.003, z: 0.83671}
   m_Children:
   - {fileID: 2107212399}
   - {fileID: 1867318749}
@@ -2641,7 +2641,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 620230534}
+      objectReference: {fileID: 620230538}
     - target: {fileID: 114060492848460142, guid: 296ab75400a347b46b97cfa7e00e54d7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

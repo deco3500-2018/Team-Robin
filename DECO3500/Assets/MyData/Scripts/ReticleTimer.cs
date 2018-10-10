@@ -29,9 +29,6 @@ public class ReticleTimer : MonoBehaviour {
 		load6 = GameObject.Find("Load6");
 		load7 = GameObject.Find("Load7");
 		load8 = GameObject.Find("Load8");
-
-
-		Debug.Log("dhsajfhjdshfjkds");
 	}
 
 	void Start() {
@@ -144,7 +141,6 @@ public class ReticleTimer : MonoBehaviour {
 		}
 
 		if (time <= 0.30f) {
-			// GetComponent<Image>().sprite = load1;
 			load1.SetActive(true);
 			load2.SetActive(false);
 			load3.SetActive(false);

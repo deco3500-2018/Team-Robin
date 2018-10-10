@@ -41,6 +41,7 @@ public class EnterButton : MonoBehaviour {
 		} 
 	}
 
+	//as StartCoroutine can't be called from another script
 	public void invalidPress() {
 		StartCoroutine(FlashEnterButton());
 	}
@@ -48,21 +49,20 @@ public class EnterButton : MonoBehaviour {
 
 	IEnumerator FlashEnterButton(){
 		Color currentColor = colourBlock.normalColor;
-		// ColorBlock greenColor = colourBlock.normalColor;
 		colourBlock.normalColor = green;
 		enterButton.colors = colourBlock;
+		
 		yield return new WaitForSeconds(1);
 		colourBlock.normalColor = currentColor;
 		enterButton.colors = colourBlock;
-		// GetComponent<Button>().colors.normalColor = currentColor;
+
 		yield return new WaitForSeconds(1);
 		colourBlock.normalColor = green;
 		enterButton.colors = colourBlock;
-		// GetComponent<Button>().colors.normalColor = green;
+
 		yield return new WaitForSeconds(1);
 		colourBlock.normalColor = currentColor;
 		enterButton.colors = colourBlock;
-		// GetComponent<Button>().colors.normalColor = currentColor;
 	}
 
 }
