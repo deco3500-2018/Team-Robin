@@ -64,24 +64,14 @@ public class Player : MonoBehaviour {
 	*/
 	private void consoleTextGaze() {
 		if (isLookedAt) {
-			//increment timeDuration
-			// lookedAtTimer++;
-			//modify graphical indicator
-			// lookedAtTimer = gazeTimer.reticleTimer(lookedAtTimer);
-			// StartCoroutine(TheTimer());
-			// gazeTimer.reticleTimer(lookedAtTimer);
-			// lookedAtTimer++;
 			waity();
 			if (lookedAtTimer == 10) {
-				// lookedAtTimer = 0;
-
 				atConsole();
 				toConsoleTeleport();
 				isLookedAt = false;
 			}
 		} else {
 			lookedAtTimer = 0;
-			//reset graphical indicator to 0
 		}
 	}
 
@@ -94,12 +84,11 @@ public class Player : MonoBehaviour {
 		++waitTimer;
 	}
 
-	IEnumerator TheTimer() {
-		Debug.Log("fhdsajfhjweayuhjnresfdyuihj");
+	/*IEnumerator TheTimer() {
 		yield return new WaitForSeconds(100);
 		gazeTimer.reticleTimer(lookedAtTimer);
 		// yield return new WaitForSeconds(100);
-	}
+	}*/
 
 	/*Sets if the user is at the console or not. Changes the gaze text to the
 	appropriate string deponding if user is or is not at the console.*/

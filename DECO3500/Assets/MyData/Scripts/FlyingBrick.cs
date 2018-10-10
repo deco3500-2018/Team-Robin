@@ -14,6 +14,7 @@ public class FlyingBrick : MonoBehaviour {
 	private float x;
 	private float y;
 	private int countDown;
+	public AudioClip clip;
 	
 
 	// private Text DisplayText;
@@ -248,6 +249,8 @@ public class FlyingBrick : MonoBehaviour {
 		} else {
 			Debug.Log("eeeeeeppp");
 			//TODO: add bad/wrong/invalid sound here
+			AudioSource audio = GameObject.Find("Wrong").GetComponent<AudioSource>();
+			audio.PlayOneShot(clip,0.7f);
 			enterButton.invalidPress();
 		}
 	}
