@@ -6,17 +6,18 @@ using UnityEngine.EventSystems;
 
 public class UIHandler : MonoBehaviour {
     Button[] btns;
-    Text DisplayText;
+    private Text DisplayText;
     string lastText;
+    public string number;
 	// Use this for initialization
 	void Start () {
         DisplayText = this.transform.Find("HLayout/Image/Text").GetComponent<Text>();
         DisplayText.text = "";
         btns = this.GetComponentsInChildren<Button>();
-        foreach(Button b in btns)
-        {
+        foreach(Button b in btns) {
             b.onClick.AddListener(OnButtonClick);
         }
+        number = "";
 	}
 	
 	// Update is called once per frame
@@ -24,26 +25,21 @@ public class UIHandler : MonoBehaviour {
 		
 	}
 
-    void OnButtonClick()
-    {
+    void OnButtonClick() {
         string name = EventSystem.current.currentSelectedGameObject.name;
-        if (name == "Enter")
-        {
+        if (name == "Enter") {
+            number = DisplayText.text;
             DisplayText.text = "";
-        }
-        else if (name == "Empty")
-        {
+        } else if (name == "Empty") {
             DisplayText.text = lastText;
-        }
-        else
-        {
+        } else {
             lastText = DisplayText.text;
             DisplayText.text += name;
         }
 
-        if (name == "Backspace")
-        {
+        if (name == "Backspace") {
             DisplayText.text = "";
         }
     }
+
 }
