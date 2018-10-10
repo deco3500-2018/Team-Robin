@@ -13,14 +13,16 @@ public class Player : MonoBehaviour {
 	//is the user looking at the console text
 	private bool isLookedAt = false;
 	//how long the user has to look at the console text in order to teleport
-	public float timeDuration;
+	public int timeDuration;
 	//how long the user has been loking at the console text
-	private float lookedAtTimer = 0f;
+	private int lookedAtTimer = 0;
 	//graphical progress indicator
 	private ReticleTimer gazeTimer;
 	private GameObject player;
 	private GameObject timer;
 	private Transform timerTrans;
+
+	private int waitTimer = 0;
 
 
 	// public event Action
@@ -63,19 +65,40 @@ public class Player : MonoBehaviour {
 	private void consoleTextGaze() {
 		if (isLookedAt) {
 			//increment timeDuration
-			lookedAtTimer += Time.deltaTime;
+			// lookedAtTimer++;
 			//modify graphical indicator
-			gazeTimer.reticleTimer(lookedAtTimer);
-			if (lookedAtTimer > timeDuration) {
-				lookedAtTimer = 0f;
+			// lookedAtTimer = gazeTimer.reticleTimer(lookedAtTimer);
+			// StartCoroutine(TheTimer());
+			// gazeTimer.reticleTimer(lookedAtTimer);
+			// lookedAtTimer++;
+			waity();
+			if (lookedAtTimer == 10) {
+				// lookedAtTimer = 0;
 
 				atConsole();
 				toConsoleTeleport();
+				isLookedAt = false;
 			}
 		} else {
-			lookedAtTimer = 0f;
+			lookedAtTimer = 0;
 			//reset graphical indicator to 0
 		}
+	}
+
+	private void waity() {
+		if (waitTimer == 10) {
+			waitTimer = 0;
+			gazeTimer.reticleTimer(lookedAtTimer);
+			lookedAtTimer++;
+		}
+		++waitTimer;
+	}
+
+	IEnumerator TheTimer() {
+		Debug.Log("fhdsajfhjweayuhjnresfdyuihj");
+		yield return new WaitForSeconds(100);
+		gazeTimer.reticleTimer(lookedAtTimer);
+		// yield return new WaitForSeconds(100);
 	}
 
 	/*Sets if the user is at the console or not. Changes the gaze text to the

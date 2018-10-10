@@ -54,9 +54,9 @@ public class ReticleTimer : MonoBehaviour {
 
 	/*Give a loading timer for when something is OnHover() EventTrigger
 	to simulate a gaze timer reticle*/
-	public int reticleTimer(float time) {
+	public void reticleTimer(int time) {
 		// Debug.Log("batman");
-		if (time >= 2.51f) {
+		if (time == 7) {
 			load1.SetActive(false);
 			load2.SetActive(false);
 			load3.SetActive(false);
@@ -65,10 +65,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(false);
 			load8.SetActive(true);
-			return 0;
+			// return 8;
 		}
 
-		if (time >= 2.01f && time <= 2.50f) {
+		if (time == 6) {
 			load1.SetActive(false);
 			load2.SetActive(false);
 			load3.SetActive(false);
@@ -77,10 +77,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(true);
 			load8.SetActive(false);
-			return 0;
+			// return 7;
 		}
 
-		if (time >= 1.61f && time <= 2.00f) {
+		if (time == 5) {
 			load1.SetActive(false);
 			load2.SetActive(false);
 			load3.SetActive(false);
@@ -89,10 +89,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(true);
 			load7.SetActive(false);
 			load8.SetActive(false);
-			return 0;
+			// return 6;
 		}
 
-		if (time >= 1.31f && time <= 1.60f) {
+		if (time == 4) {
 			load1.SetActive(false);
 			load2.SetActive(false);
 			load3.SetActive(false);
@@ -101,10 +101,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(false);
 			load8.SetActive(false);
-			return 0;
+			// return 5;
 		}
 
-		if (time >= 1.01f && time <= 1.30f) {
+		if (time == 3) {
 			load1.SetActive(false);
 			load2.SetActive(false);
 			load3.SetActive(false);
@@ -113,10 +113,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(false);
 			load8.SetActive(false);
-			return 0;
+			// return 4;
 		}
 
-		if (time >= 0.61f && time <= 1.00f) {
+		if (time == 2) {
 			load1.SetActive(false);
 			load2.SetActive(false);
 			load3.SetActive(true);
@@ -125,10 +125,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(false);
 			load8.SetActive(false);
-			return 0;
+			// return 3;
 		}
 
-		if (time >= 0.31f && time <= 0.60f) {
+		if (time == 1) {
 			load1.SetActive(false);
 			load2.SetActive(true);
 			load3.SetActive(false);
@@ -137,10 +137,10 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(false);
 			load8.SetActive(false);
-			return 0;
+			// return 2;
 		}
 
-		if (time <= 0.30f) {
+		if (time == 0) {
 			load1.SetActive(true);
 			load2.SetActive(false);
 			load3.SetActive(false);
@@ -149,8 +149,8 @@ public class ReticleTimer : MonoBehaviour {
 			load6.SetActive(false);
 			load7.SetActive(false);
 			load8.SetActive(false);
-			return 0;
+			// return 1;
 		}
-		return 5;
+		// return 5;
 	}
 }
