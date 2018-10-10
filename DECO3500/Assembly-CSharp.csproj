@@ -163,7 +163,6 @@
      <Compile Include="Assets\MyData\Scripts\ballStart.cs" />
      <Compile Include="Assets\MyData\Scripts\EnterButton.cs" />
      <Compile Include="Assets\MyData\Scripts\FlyingBrick.cs" />
-     <Compile Include="Assets\MyData\Scripts\physicsProjectile.cs" />
      <Compile Include="Assets\MyData\Scripts\Player.cs" />
      <Compile Include="Assets\MyData\Scripts\PlayerWalk.cs" />
      <Compile Include="Assets\MyData\Scripts\ReticleTimer.cs" />
