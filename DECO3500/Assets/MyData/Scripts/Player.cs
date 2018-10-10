@@ -69,14 +69,12 @@ public class Player : MonoBehaviour {
 			if (lookedAtTimer > timeDuration) {
 				lookedAtTimer = 0f;
 
-				// Debug.Log("teleported to console");
 				atConsole();
 				toConsoleTeleport();
 			}
 		} else {
 			lookedAtTimer = 0f;
 			//reset graphical indicator to 0
-			// gazeTimer.reset();
 		}
 	}
 
