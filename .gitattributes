@@ -27,3 +27,7 @@
 *.mdb binary
 *.dll.mdb binary
 *.dll binary
+
+# images treat as images
+*.jpg diff=image
+*.png diff=image
