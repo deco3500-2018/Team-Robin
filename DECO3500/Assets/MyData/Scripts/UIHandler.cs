@@ -40,5 +40,10 @@ public class UIHandler : MonoBehaviour {
             lastText = DisplayText.text;
             DisplayText.text += name;
         }
+
+        if (name == "Backspace")
+        {
+            DisplayText.text = "";
+        }
     }
 }
