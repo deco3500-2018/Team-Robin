@@ -36,6 +36,8 @@ All our documentation can be found on the [GitHub wiki](https://github.com/deco3
 ## Ongoing Documentation of Work
 All ongoing documentation of work can be seen in the github issues or [this](https://github.com/deco3500-2018/Team-Robin/wiki/Ongoing-Documentation-of-Work) wiki page which contains links to all issues completed and by what team member.
 
+## Design Process Overview
+Can be found on [this]() wiki page
 # Showcase: Conference Poster and supporting promotional material
 ## Conference Poster
 ![ADD CONFERENCE POSTER AND LINK HERE WHEN IT IS DONE]()
