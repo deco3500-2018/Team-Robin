@@ -11,8 +11,11 @@ public class TextGaze : MonoBehaviour {
 
 	private GameObject launchButton;
 	public Material blackLaunchButton;
+	private GameObject flyingBrick;
 
 	void Start() {
+		flyingBrick = GameObject.Find("FlyingBrick");
+
 		GameObject handlerObject = GameObject.Find("Canvas");
 		uiHandler = handlerObject.GetComponent<UIHandler>();
 
@@ -35,7 +38,8 @@ public class TextGaze : MonoBehaviour {
 		uiHandler.DisplayText.text = "";
 		launchButton.GetComponent<Renderer>().material = blackLaunchButton;
 		uiHandler.enterPressed = false;
-
+		//brick coordinates
+		flyingBrick.transform.position = new Vector3(-3.62f, 3.55f, -0.069f);
 	}
 
 }
