@@ -12,9 +12,13 @@ public class TextGaze : MonoBehaviour {
 	private GameObject launchButton;
 	public Material blackLaunchButton;
 	private GameObject flyingBrick;
+	private Player player;
 
 	void Start() {
 		flyingBrick = GameObject.Find("FlyingBrick");
+
+		GameObject playerObject = GameObject.Find("ConsoleTextGaze");
+		player = playerObject.GetComponent<Player>();
 
 		GameObject handlerObject = GameObject.Find("Canvas");
 		uiHandler = handlerObject.GetComponent<UIHandler>();
@@ -40,6 +44,8 @@ public class TextGaze : MonoBehaviour {
 		uiHandler.enterPressed = false;
 		//brick coordinates
 		flyingBrick.transform.position = new Vector3(-3.62f, 3.55f, -0.069f);
+		player.userAtConsole = true; // so next method can set it to false
+		player.atConsole();
 	}
 
 }

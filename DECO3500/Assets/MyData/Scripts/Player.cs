@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 	private Vector3 playerStartingPosition;
 	private float x;
 	private float y;
-	private bool userAtConsole;
+	public bool userAtConsole;
 	public TextMesh text;
 
 	//is the user looking at the console text
@@ -75,6 +75,13 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	//used by the reset button in the virtual world, accessed in FlyingBrick.cs
+	public void resetTeleport() {
+		userAtConsole = false;
+		text.text = "Go To Control Panel";
+		toConsoleTeleport();
+	}
+
 	private void waity() {
 		if (waitTimer == 10) {
 			waitTimer = 0;
@@ -84,15 +91,11 @@ public class Player : MonoBehaviour {
 		++waitTimer;
 	}
 
-	/*IEnumerator TheTimer() {
-		yield return new WaitForSeconds(100);
-		gazeTimer.reticleTimer(lookedAtTimer);
-		// yield return new WaitForSeconds(100);
-	}*/
-
 	/*Sets if the user is at the console or not. Changes the gaze text to the
-	appropriate string deponding if user is or is not at the console.*/
-	private void atConsole() {
+	appropriate string deponding if user is or is not at the console. Changes
+	to the opposite*/
+	// private void atConsole() {
+	public void atConsole() {
 		if (userAtConsole) {
 			userAtConsole = false;
 			text.text = "Go To Control Panel";

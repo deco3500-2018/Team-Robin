@@ -10,6 +10,7 @@ public class FlyingBrick : MonoBehaviour {
 	private GameObject flyingBrick;
 	
 	private GameObject player;
+	private Player playerScript;
 	private Vector3 playerStartingPosition;
 	private float x;
 	private float y;
@@ -17,19 +18,11 @@ public class FlyingBrick : MonoBehaviour {
 	public AudioClip clip;
 	
 
-	// private Text DisplayText;
-	// opponentScript theScript  = OBJhit.GetComponent("opponentScript");
-	// private bool enterPressed;
 	private UIHandler uiHandler;
 
 	private EnterButton enterButton;
 	
 	// Use this for initialization
-
-	 /*GameObject enemy = GameObject.Find("Enemy");
- 	EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
- // Get current health
- enemyHealth.CurrentHealth;*/
 	void Start () {
 		count = 0;
 		LaunchBrick = false;
@@ -37,14 +30,12 @@ public class FlyingBrick : MonoBehaviour {
 		
 		//player teleporting stuff
 		player = GameObject.Find("Player");
+		playerScript = player.GetComponent<Player>();
 		playerStartingPosition = player.transform.position;
 		x = playerStartingPosition.x;
 		y = playerStartingPosition.y;
 		
 		countDown = 100;
-		// DisplayText = GameObject.Find("HLayout/Image/Text").GetComponent<Text>();
-		//TODO: remember to set and reset in rest method
-		// enterPressed = false;
 		//get UIHandelr script
 		GameObject handlerObject = GameObject.Find("Canvas");
 		uiHandler = handlerObject.GetComponent<UIHandler>();
@@ -58,9 +49,7 @@ public class FlyingBrick : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(LaunchBrick) {
-			// Debug.Log("text: " + uiHandler.number);
 			if (countDown == 0) {
-				// Debug.Log("countdown = 0");
 				GetConsoleNumber(uiHandler.number);
 				count++;
 			} else {
@@ -93,39 +82,7 @@ public class FlyingBrick : MonoBehaviour {
 
 	//method called for the brick to land on the bullseye
 	private void SetBrickPositionLand(int count) {
-		//add if not number from console
 		switch(count) {
-			/*case 1:
-				flyingBrick.transform.position = new Vector3(-2.68f, 3.15f, -0.069f);
-			    break; 
-		    case 2:
-				flyingBrick.transform.position = new Vector3(-1.74f, 2.75f, -0.069f);
-			    break; 
-			case 3:
-				flyingBrick.transform.position = new Vector3(-0.8f, 2.35f, -0.069f);
-			    break; 
-			case 4:
-				flyingBrick.transform.position = new Vector3(0.14f, 1.95f, -0.069f);
-			    break; 
-			case 5:
-				flyingBrick.transform.position = new Vector3(1.08f, 1.55f, -0.069f);
-			    break; 
-			case 6:
-				flyingBrick.transform.position = new Vector3(2.02f, 1.15f, -0.069f);
-			    break; 
-		    case 7:
-				flyingBrick.transform.position = new Vector3(2.96f, 0.75f, -0.069f);
-			    break; 
-		    case 8:
-				flyingBrick.transform.position = new Vector3(3.9f, 0.35f, -0.069f);
-			    break; 
-		    case 9:
-				flyingBrick.transform.position = new Vector3(4.843f, -0.01f, -0.069f);
-			    break; 
-		    case 10:
-				// flyingBrick.transform.position = new Vector3(1.08f, 1.55f,-0.069f);
-			    LaunchBrick = false;
-			    break; */
 			case 1:
 				flyingBrick.transform.position = new Vector3(-2.69f, 3.19f, -0.069f);
 			    break; 
@@ -245,10 +202,10 @@ public class FlyingBrick : MonoBehaviour {
 	public void FlyNow(bool clicked) {
 		if (uiHandler.enterPressed) {
 			LaunchBrick = clicked;
-			player.transform.position = new Vector3(x, y, -11.7f);
+			// player.transform.position = new Vector3(x, y, -11.7f);
+			playerScript.resetTeleport();
 		} else {
 			Debug.Log("eeeeeeppp");
-			//TODO: add bad/wrong/invalid sound here
 			AudioSource audio = GameObject.Find("Wrong").GetComponent<AudioSource>();
 			audio.PlayOneShot(clip,0.7f);
 			enterButton.invalidPress();
