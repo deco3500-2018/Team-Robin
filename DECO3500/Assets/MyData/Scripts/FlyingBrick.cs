@@ -58,7 +58,12 @@ public class FlyingBrick : MonoBehaviour {
 		}
 	}
 
-	//TODO: [write] function definition (99) GetConsoleNumber
+	/**
+	 * Receives the console numbers text and from that determins what method
+	 * to use to set the brick landing position.
+	 * @param {String} string text [The console number used for determing the 
+	 * brick fight position of landing.]
+	 */
 	public void GetConsoleNumber(string text) {
 		int number = 0;
 		int.TryParse(text, out number);
@@ -210,5 +215,13 @@ public class FlyingBrick : MonoBehaviour {
 			audio.PlayOneShot(clip,0.7f);
 			enterButton.invalidPress();
 		}
+	}
+
+	//TODO: [write] reset function definition (99)
+	public void reset() {
+		Debug.Log("hfjdsahjfhdsjafhjkd");
+		count = 0;
+		LaunchBrick = false;
+		countDown = 100;
 	}
 }

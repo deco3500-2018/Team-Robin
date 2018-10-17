@@ -12,6 +12,7 @@ public class TextGaze : MonoBehaviour {
 	private GameObject launchButton;
 	public Material blackLaunchButton;
 	private GameObject flyingBrick;
+	private FlyingBrick flyingBrickScript;
 	private Player player;
 
 	void Start() {
@@ -24,6 +25,7 @@ public class TextGaze : MonoBehaviour {
 		uiHandler = handlerObject.GetComponent<UIHandler>();
 
 		launchButton = GameObject.Find("LaunchButton");
+		flyingBrickScript = launchButton.GetComponent<FlyingBrick>();
 	}
 
 	/*Changes the console text colour when hovered over by reticle*/
@@ -44,8 +46,10 @@ public class TextGaze : MonoBehaviour {
 		uiHandler.enterPressed = false;
 		//brick coordinates
 		flyingBrick.transform.position = new Vector3(-3.62f, 3.55f, -0.069f);
-		player.userAtConsole = true; // so next method can set it to false
-		player.atConsole();
+		/*player.userAtConsole = true; // so next method can set it to false
+		player.atConsole();*/
+		player.resetTeleport();
+		flyingBrickScript.reset();
 	}
 
 }
