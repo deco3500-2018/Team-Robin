@@ -25,7 +25,10 @@ To view all buid history go [here](https://github.com/deco3500-2018/Team-Robin/t
 [build 10/10/18](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/10-10-18%20build.apk)
 
 [build 17/10/18](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/17-10-18%20build.apk)
+
 ## Final Prototype(build)
+This is a link to the [final prototype build](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/17-10-18%20build.apk) that can be installed on any android phone. To be used with a google cardboard.
+
 # Stand Ups
 ## [Week 9](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-9)
 ## [Week 11](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-11)
