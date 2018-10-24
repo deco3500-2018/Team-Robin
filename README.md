@@ -48,7 +48,8 @@ All ongoing documentation of work can be seen in the github issues or [this](htt
 Can be found on [this]() wiki page
 # Showcase: Conference Poster and supporting promotional material
 ## Conference Poster
-[Conference poster as a PDF](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/Presentation2.pdf)
+[Conference poster as a PDF made by @ManshadAli](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/Presentation2.pdf)
 
 ![](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/conferencePosterImage.jpg)
 ## Supporting Material
+[Brocure made by @s4515511](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/deco3500-brochure.pdf)
