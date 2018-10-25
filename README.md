@@ -25,7 +25,10 @@ To view all buid history go [here](https://github.com/deco3500-2018/Team-Robin/t
 [build 10/10/18](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/10-10-18%20build.apk)
 
 [build 17/10/18](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/17-10-18%20build.apk)
+
 ## Final Prototype(build)
+This is a link to the [final prototype build](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/17-10-18%20build.apk) that can be installed on any android phone. To be used with a google cardboard.
+
 # Stand Ups
 ## [Week 9](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-9)
 ## [Week 11](https://github.com/deco3500-2018/Team-Robin/wiki/Stand-Up-Week-11)
@@ -45,6 +48,8 @@ All ongoing documentation of work can be seen in the github issues or [this](htt
 Can be found on [this]() wiki page
 # Showcase: Conference Poster and supporting promotional material
 ## Conference Poster
-![ADD CONFERENCE POSTER AND LINK HERE WHEN IT IS DONE]()
+[Conference poster as a PDF made by @ManshadAli](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/Presentation2.pdf)
 
+![](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/conferencePosterImage.jpg)
 ## Supporting Material
+[Brocure made by @s4515511](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/deco3500-brochure.pdf)
