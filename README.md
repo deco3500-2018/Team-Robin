@@ -84,3 +84,5 @@ Can be found on [this](../../wiki/Design-Process) wiki page
 
 ## Supporting Material
 [Brocure made by @s4515511](/Documents/deco3500-brochure.pdf)
+
+[Link to Google Drive folder with Raw user data](https://drive.google.com/drive/folders/11N94aPlL3sOBxBMbcHDbuf-HyCYQ8i-w?usp=sharing) if link broken send a email to mikaelasomerville@gmail.com to receive access privilages
