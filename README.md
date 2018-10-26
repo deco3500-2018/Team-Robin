@@ -11,15 +11,21 @@ With conducting our own interviews it has been shown that when first asked to us
 
 
 ## Proposal
-[Link to Proposal Wiki](https://github.com/deco3500-2018/Team-Robin/wiki/Proposal)
+[Link to Proposal Wiki](../../wiki/Proposal)
 
 # Requirements
 All requirements relating to this project can be found on our wiki under the **Requirements** heading or individually below:
- - [User Stories](https://github.com/deco3500-2018/Team-Robin/wiki/User-Stories)
+ - [User Stories](../../wiki/User-Stories)
  - [Functional and Non-Functional Requirements](../../wiki/Functional-and-Non-Functional)
 
 # Designs
-**TODO WRITE ABOUT THIS**
+
+Scenario of use one. Depicts a storyboard of a teacher that is not comfortable in using technology in the classroom and how through having supprt and training is now comofrtable in using this technology.
+![](/Images/deco3500_storyboard-1.jpg)
+
+Scenario of use two. This storybaord depicts a physics student coming across our application and seeing its potentia benefits it could bring to his physics class. Knowing that his physics teacher is reluctant in using technology he view this as a opputrunity to teach his teacher how to become comfortable around technology.
+
+![](/Images/deco3500_storyboard-2.jpg)
 
 
 # Interactive prototype/s (interim and final)
@@ -40,7 +46,7 @@ To view all build history go [here](https://github.com/deco3500-2018/Team-Robin/
 This is a link to the [final prototype build](https://github.com/deco3500-2018/Team-Robin/blob/master/Builds/17-10-18%20build.apk) that can be installed on any android phone. To be used with a google cardboard.
 
 ## How to deploy and use our prototype
-Please go to the following wiki age titled [Instillation](https://github.com/deco3500-2018/Team-Robin/wiki/Installation)
+Please go to the following wiki age titled [Instillation](../../wiki/Installation)
 running the prototype is aimed at just installing a .apk on your phone and putting it in a Google Cardboard VR headset.
 
 # Stand Ups
@@ -48,7 +54,7 @@ running the prototype is aimed at just installing a .apk on your phone and putti
 ## [Week 11](../../wiki/Stand-Up-Week-11)
   
 # GitHub Repository and Documentation
-All our documentation can be found on the [GitHub wiki](https://github.com/deco3500-2018/Team-Robin/wiki) and navigated through with the side panel on the right which has been layed out hopefully in a meaningful manor.
+All our documentation can be found on the [GitHub wiki](../../wiki) and navigated through with the side panel on the right which has been layed out hopefully in a meaningful manor.
 
 ## [readme.md](https://github.com/deco3500-2018/Team-Robin/blob/master/README.md)
 
@@ -60,9 +66,9 @@ Can be found on [this](https://github.com/deco3500-2018/Team-Robin/wiki/Design-P
 
 # Showcase: Conference Poster and supporting promotional material
 ## Conference Poster
-[Conference poster as a PDF made by @ManshadAli](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/Presentation2.pdf)
+[Conference poster as a PDF made by @ManshadAli](/Documents/Presentation2.pdf)
 
-![](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/conferencePosterImage.jpg)
+![](/Documents/conferencePosterImage.jpg)
 
 ## Supporting Material
-[Brocure made by @s4515511](https://github.com/deco3500-2018/Team-Robin/blob/master/Documents/deco3500-brochure.pdf)
+[Brocure made by @s4515511](/Documents/deco3500-brochure.pdf)
